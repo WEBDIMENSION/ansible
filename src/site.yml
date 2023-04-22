@@ -1,0 +1,48 @@
+---
+- name: Ansible
+  hosts: ansible
+  vars:
+  vars_files:
+  roles:
+    - role: ansible_user
+      tags:
+        - ansible_user
+    - role: general_user
+      tags:
+        - general_user
+    - role: common
+      tags:
+        - common
+    - role: bash_it
+      tags:
+        - bash_it
+    - role: general_user
+      tags:
+        - general_user
+    - role: hostname
+      tags:
+        - hostname
+    - role: monitors
+      tags:
+        - monitors
+    - role: httpd
+      tags:
+        - httpd
+    - role: nginx
+      tags:
+        - nginx
+    - role: php
+      tags:
+        - php
+    - role: mysql
+      tags:
+        - mysql
+    - role: postgres
+      tags:
+        - postgres
+    - role: letsencrypt
+      tags:
+        - letsencrypt
+    - role: softether
+      tags:
+        - softether
